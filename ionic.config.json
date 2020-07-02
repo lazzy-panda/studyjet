@@ -1,0 +1,7 @@
+{
+  "name": "studyjet",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
