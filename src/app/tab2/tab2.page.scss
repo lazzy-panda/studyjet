@@ -1,6 +1,27 @@
 ion-content {
   --background: linear-gradient(#76cae6, #0d6ed9);
+  text-align: center;
 }
 ion-toolbar {
   --background: none;
+}
+img {
+  margin-top: 20px;
+  width: 150px !important;
+  height: 150px !important;
+}
+.name{
+  color: white;
+  font-weight: bold;
+}
+.text{
+  color: white;
+
+}
+.container{
+  padding: 20px;
+}
+.chip{
+  --color: #4b4b4b;
+  --background: #fff !important;
 }

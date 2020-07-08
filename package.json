@@ -6,8 +6,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ionic build --prod -- --base-href https://kiriouse.github.io/studyjet/",
     "test": "ng test",
+    "deploy": "sudo npx angular-cli-ghpages --dir=www",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
