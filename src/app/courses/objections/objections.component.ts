@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-objections',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ObjectionsComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {}
+  constructor(private router: Router) { }
+  onBackClick() {
+    this.router.navigate(['/tabs/tab1']);
+  }
+  ngOnInit() {
+  }
 
 }
