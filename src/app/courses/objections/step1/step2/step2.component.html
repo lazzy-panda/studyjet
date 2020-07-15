@@ -1,0 +1,37 @@
+<ion-content [fullscreen]="true">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="dialog-container">
+            <p class="dialogue">У меня сейчас нет денег на закупку...</p>
+            <ion-img src="assets/icon/businessman2.png" class="businessman"></ion-img>
+        </div>
+
+        <div id="container">
+            <div class="narration-container"><p class="narration narration--wide">
+                Какой вариант развития диалога вы выберите?
+            </p></div>
+        </div>
+
+
+
+        <div class="dialog-container" *ngFor="let r of replicas">
+            <div class="dialogue answer">
+                <div><ion-checkbox color="secondary"></ion-checkbox></div>
+                <div><p style="margin: 0"> {{ r }}</p></div>
+            </div>
+        </div>
+
+        <div id="bottom">
+            <section class="buttons">
+                <ion-button (click)="onBackClick()" color="warning" expand="block">
+                    <ion-icon name="arrow-undo-outline"></ion-icon>
+                    Назад
+                </ion-button>
+                <ion-button (click)="onNextClick()" color="success" class="start" expand="block">
+                    <ion-icon slot="end" name="arrow-redo-outline"></ion-icon>
+                    Проверить
+                </ion-button>
+            </section>
+        </div>
+
+    </div>
+</ion-content>

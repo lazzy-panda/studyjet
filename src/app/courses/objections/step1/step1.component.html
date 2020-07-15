@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="row row--c">
+            <div class="cell">
+                <h1>Case #1</h1>
+            </div>
+        </div>
+
+        <div id="container">
+            <div class="narration-container"><p class="narration narration--wide">Вы продаете мебельную фурнитуру
+                магазинам
+                и мастерским. На встрече с новым клиентов, после вашего предложения, вы услышали возражение:</p></div>
+        </div>
+
+        <div id="bottom">
+            <div class="dialog-container">
+                <p class="dialogue">У меня сейчас нет денег на закупку...</p>
+                <ion-img src="assets/icon/businessman2.png" class="businessman"></ion-img>
+            </div>
+            <section class="buttons">
+                <ion-button (click)="onBackClick()" color="warning" expand="block">
+                    <ion-icon name="arrow-undo-outline"></ion-icon>
+                    Назад
+                </ion-button>
+                <ion-button (click)="onNextClick()" color="success" class="start" expand="block">
+                    <ion-icon slot="end" name="arrow-redo-outline"></ion-icon>
+                    Далее
+                </ion-button>
+            </section>
+        </div>
+    </div>
+</ion-content>
