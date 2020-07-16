@@ -12,6 +12,9 @@ export class ObjectionsComponent implements OnInit {
   onBackClick() {
     this.router.navigate(['/tabs/tab1']);
   }
+  onStartClick() {
+    this.router.navigate(['courses/objections/step1']);
+  }
   ngOnInit() {
   }
 

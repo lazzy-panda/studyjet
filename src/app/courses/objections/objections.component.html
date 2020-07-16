@@ -1,6 +1,5 @@
 <ion-content [fullscreen]="true">
   <div id="container">
-
     <ion-img src="assets/logo.png" class="logo-img"></ion-img>
     <strong class="logo"><span>Работа с </span><span style="color: #6bd1ff">возражениями</span></strong>
     <br><br>
@@ -11,7 +10,7 @@
         <ion-icon name="chevron-back-outline"></ion-icon>
         Вернуться
       </ion-button>
-      <ion-button color="success" class="start" expand="block">
+      <ion-button (click)="onStartClick()" color="success" class="start" expand="block">
         <ion-icon slot="start" name="rocket-outline"></ion-icon>
         Начать
       </ion-button>
